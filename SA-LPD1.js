@@ -10,7 +10,7 @@ num3 = 5
 if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
 
   // Determinar el número mayor, el del medio y el menor
-  if (num1 >= num2 && num1 >= num3) {
+  if (num1 > num2 && num1 > num3) {
     numMayor = num1;
     numMedio = Math.max(num3, num2);
     numMenor = Math.min(num3, num2);
@@ -18,7 +18,7 @@ if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
     console.log("Números ordenados de mayor a menor: " + numMayor + " " + numMedio + " " + numMenor);
     console.log("Números ordenados de menor a mayor: " + numMenor + " " + numMedio + " " + numMayor);
 
-  } else if (num2 >= num1 && num2 >= num3) {
+  } else if (num2 > num1 && num2 > num3) {
     numMayor = num2;
     numMedio = Math.max(num3, num1);
     numMenor = Math.min(num3, num1);
@@ -26,7 +26,7 @@ if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
     console.log("Números ordenados de mayor a menor: " + numMayor + " " + numMedio + " " + numMenor);
     console.log("Números ordenados de menor a mayor: " + numMenor + " " + numMedio + " " + numMayor);
     
-  } else if (num3 >= num1 && num3 >= num2) {
+  } else if (num3 > num1 && num3 > num2) {
     numMayor = num3;
     numMedio = Math.max(num2, num1);
     numMenor = Math.min(num2, num1);
